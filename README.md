@@ -29,3 +29,6 @@ This game is designed to improve digital literacy and critical thinking, focusin
 Dynamic Content System Using JSON
 
 The Mail and Notepad applications are fully data-driven and can be dynamically modified using JSON files. All email content, including sender information, message body, and scam indicators, is loaded from external JSON data, allowing new scenarios to be added without changing the game code. Similarly, the Notepad application loads player information and clues from JSON, making it easy to update or expand narrative details. This approach ensures flexibility, scalability, and easier content management during development.
+<img width="1156" height="695" alt="image" src="https://github.com/user-attachments/assets/5a0e3833-a8f7-4230-816e-7869afa3429c" />
+<img width="1920" height="1128" alt="image" src="https://github.com/user-attachments/assets/8688629c-8ebd-45e5-b1a6-64d333009c63" />
+
