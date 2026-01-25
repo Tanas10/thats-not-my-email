@@ -1,0 +1,104 @@
+[gd_scene load_steps=3 format=3 uid="uid://djy6dnphu1wta"]
+
+[ext_resource type="Script" uid="uid://dlojyn3mfgr88" path="res://AppWindow.gd" id="1_fwhcy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fwhcy"]
+content_margin_left = 12.0
+draw_center = false
+
+[node name="AppWindow" type="Panel"]
+custom_minimum_size = Vector2(500, 350)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fwhcy")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 32
+
+[node name="Content" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/Content"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.7529412, 0.7529412, 0.7529412, 1)
+
+[node name="TitleBar" type="Panel" parent="."]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="TitleBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0.5019608, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TitleBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="TitleBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_fwhcy")
+text = "App"
+vertical_alignment = 1
+
+[node name="CloseButton" type="Button" parent="TitleBar/HBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+text = "X"
+
+[node name="ColorRect" type="ColorRect" parent="TitleBar/HBoxContainer/CloseButton"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.7529412, 0.7529412, 0.7529412, 1)
+
+[node name="Label" type="Label" parent="TitleBar/HBoxContainer/CloseButton"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "X"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="TitleBar/HBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]

@@ -1,0 +1,173 @@
+[gd_scene load_steps=7 format=3 uid="uid://wpjnxhejqexk"]
+
+[ext_resource type="Texture2D" uid="uid://btxtefutnw7e0" path="res://icons/mailbox.png" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://dm1lj17lbkyrq" path="res://Main.gd" id="1_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://bif1ttgl1y1nm" path="res://icons/wallpaper.png" id="2_7mycd"]
+[ext_resource type="Texture2D" uid="uid://cammoxdrhm1ms" path="res://icons/notepad.png" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://jv34njh4uuhs" path="res://icons/windows.png" id="4_1bvp3"]
+[ext_resource type="StyleBox" uid="uid://n7xrkfe0lbxa" path="res://startbuttonlook.tres" id="5_272bh"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1bvp3")
+
+[node name="Desktop" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="Desktop"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.5019608, 0.5019608, 1)
+
+[node name="TextureRect" type="TextureRect" parent="Desktop"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_7mycd")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="WindowLayer" type="Control" parent="Desktop"]
+z_index = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DesktopIcons" type="VBoxContainer" parent="Desktop"]
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 140.0
+offset_bottom = 228.0
+
+[node name="MailIcon" type="Button" parent="Desktop/DesktopIcons"]
+layout_mode = 2
+text = "Mail"
+icon = ExtResource("1_0xm2m")
+flat = true
+autowrap_mode = 1
+autowrap_trim_flags = 0
+clip_text = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="NotepadIcon" type="Button" parent="Desktop/DesktopIcons"]
+layout_mode = 2
+text = "Your info"
+icon = ExtResource("2_h2yge")
+flat = true
+autowrap_mode = 1
+autowrap_trim_flags = 0
+clip_text = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="NotepadIcon2" type="Button" parent="Desktop/DesktopIcons"]
+layout_mode = 2
+text = "Job informations"
+icon = ExtResource("2_h2yge")
+flat = true
+autowrap_mode = 2
+autowrap_trim_flags = 0
+clip_text = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="NotepadIcon3" type="Button" parent="Desktop/DesktopIcons"]
+layout_mode = 2
+text = "Banks"
+icon = ExtResource("2_h2yge")
+flat = true
+autowrap_mode = 1
+autowrap_trim_flags = 0
+clip_text = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="NotepadIcon4" type="Button" parent="Desktop/DesktopIcons"]
+layout_mode = 2
+text = "How to play"
+icon = ExtResource("2_h2yge")
+flat = true
+autowrap_mode = 1
+autowrap_trim_flags = 0
+clip_text = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="Taskbar" type="Panel" parent="Desktop"]
+z_index = 3
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -48.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ColorRect" type="ColorRect" parent="Desktop/Taskbar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.7529412, 0.7529412, 0.7529412, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Desktop/Taskbar"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 121.0
+offset_bottom = 20.0
+grow_vertical = 2
+
+[node name="Startbutton" type="Button" parent="Desktop/Taskbar/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = ExtResource("5_272bh")
+text = "Start"
+icon = ExtResource("4_1bvp3")
+
+[node name="MailButton" type="Button" parent="Desktop/Taskbar/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = ExtResource("5_272bh")
+text = "Mail"
+
+[node name="NotepadButton" type="Button" parent="Desktop/Taskbar/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = ExtResource("5_272bh")
+text = "Notepad"
+
+[connection signal="pressed" from="Desktop/DesktopIcons/MailIcon" to="." method="_on_mail_icon_pressed"]
+[connection signal="pressed" from="Desktop/DesktopIcons/NotepadIcon" to="." method="_on_notepad_icon_pressed"]
+[connection signal="pressed" from="Desktop/DesktopIcons/NotepadIcon2" to="." method="_on_notepad_icon_2_pressed"]
+[connection signal="pressed" from="Desktop/DesktopIcons/NotepadIcon3" to="." method="_on_notepad_icon_3_pressed"]
+[connection signal="pressed" from="Desktop/DesktopIcons/NotepadIcon4" to="." method="_on_notepad_icon_4_pressed"]

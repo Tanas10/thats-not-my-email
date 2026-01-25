@@ -1,0 +1,155 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp8e04qp7drwh"]
+
+[ext_resource type="Script" uid="uid://cy5idfqyy5cit" path="res://MailApp.gd" id="1_o3cly"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o3cly"]
+draw_center = false
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[node name="MailApp" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o3cly")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_o3cly")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="MainSplit" type="HSplitContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Sidebar" type="Panel" parent="MarginContainer/MainSplit"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/MainSplit/Sidebar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="MailList" type="VBoxContainer" parent="MarginContainer/MainSplit/Sidebar/ScrollContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+
+[node name="MailView" type="Panel" parent="MarginContainer/MainSplit"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MainSplit/MailView"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="MailContent" type="VBoxContainer" parent="MarginContainer/MainSplit/MailView/MarginContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SenderLabel" type="Label" parent="MarginContainer/MainSplit/MailView/MarginContainer/MailContent"]
+layout_mode = 2
+text = "From: support@google.com
+"
+
+[node name="SubjectLabel" type="Label" parent="MarginContainer/MainSplit/MailView/MarginContainer/MailContent"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Subject: Unusual activity detected
+"
+
+[node name="BodyText" type="RichTextLabel" parent="MarginContainer/MainSplit/MailView/MarginContainer/MailContent"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Dear user,
+
+We noticed a login attempt from a new device.
+Please verify your account immediately."
+
+[node name="ActionButtons" type="HBoxContainer" parent="MarginContainer/MainSplit/MailView/MarginContainer/MailContent"]
+layout_mode = 2
+alignment = 1
+
+[node name="ScamButton" type="Button" parent="MarginContainer/MainSplit/MailView/MarginContainer/MailContent/ActionButtons"]
+layout_mode = 2
+text = "Scam"
+
+[node name="LegitButton" type="Button" parent="MarginContainer/MainSplit/MailView/MarginContainer/MailContent/ActionButtons"]
+layout_mode = 2
+text = "Real"
+
+[node name="EndScreen" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="EndScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="ResultLabel" type="Label" parent="EndScreen/VBoxContainer"]
+layout_mode = 2
+text = "All emails processed
+"
+horizontal_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="EndScreen/VBoxContainer"]
+layout_mode = 2
+text = "Score: 0 / 10
+"
+horizontal_alignment = 1
+
+[node name="CloseButton" type="Button" parent="EndScreen/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "Close Mail
+"
+
+[connection signal="pressed" from="MarginContainer/MainSplit/MailView/MarginContainer/MailContent/ActionButtons/ScamButton" to="." method="_on_scam_button_pressed"]
+[connection signal="pressed" from="MarginContainer/MainSplit/MailView/MarginContainer/MailContent/ActionButtons/LegitButton" to="." method="_on_legit_button_pressed"]
+[connection signal="pressed" from="EndScreen/VBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]

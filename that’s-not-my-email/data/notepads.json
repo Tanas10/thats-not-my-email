@@ -1,0 +1,16 @@
+{
+  "notes": [
+	{
+	  "text": "Person Information:\nName: Alex Petrov\nAge: 32\nLives in Ohrid, North Macedonia\nUses both personal and work emails frequently.\n\nOther Services Used:\nAmazon account for work purchases and personal orders (emails from @amazon.com).\nPayPal for international transactions (emails from @paypal.com).\nMicrosoft Outlook used for email (official notices do not come from random domains like outlook-mailservices.com)."
+	},
+	{
+	  "text": "Company Information:\nEmployer: NovaTech Solutions\nPosition: Software Engineer\nEmail: alex.petrov@novatech.com\nMain contacts: HR (Sarah Ling), Finance, and IT.\nOfficial company domains: novatech.com, novatech.mk.\nHR, Finance and IT emails always come from @novatech.com, not from similar domains like novatech-support.com."
+	},
+	{
+	  "text": "Bank and Payment Information:\nMain Bank: Macedonian Bank (mkbank.com)\nAccount uses online banking portal frequently.\nPayPal and Amazon accounts linked to main bank card.\nLegitimate bank emails always come from @mkbank.com, never from look-alike domains such as mkbank-verify.com."
+	},
+{
+  "text": "How to Play: That's Not Your Email\n\nGame Overview\nYou're Alex Petrov, a software engineer from Ohrid. Your inbox has 20 emails from work, bank, and services. Some are real, some are scams.\n\nYour Mission\nOpen the Mail app → Check the 20 emails in the floating Gmail-style window → For each email press the button 'REAL' or 'SCAM'.\n\n Use Clues\nOpen Notepad app → Read your personal info, company details, bank accounts, and trusted email domains. Compare sender addresses carefully!\n\n Winning\nGet 16+ correct → You spot all scams and stay safe!\nGet 12-15 correct → Good job, but watch for look-alike domains next time.\nLess than 12 → Scammers got you—review the notes and try again!\n\n\n Pro Tips\n- Check sender domain (novatech.com vs novatech-support.com)\n- Real companies never ask for bank info via email\n\nGood luck, Alex!"
+}
+  ]
+}
