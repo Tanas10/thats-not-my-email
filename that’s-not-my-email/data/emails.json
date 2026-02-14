@@ -1,124 +1,247 @@
 {
   "mails": [
 	{
+	  "sender": "teacher@school.com",
+	  "subject": "Homework Reminder",
+	  "body": "Hi Alex,\nDon't forget to complete your math homework for tomorrow.\nSee you in class!\nMrs. Brown",
+	  "is_scam": false,
+	  "wave": 1
+	},
+	{
+	  "sender": "free-robux@game-prize.net",
+	  "subject": "YOU WON 10,000 ROBUX!!!",
+	  "body": "CLICK NOW!!! You won free Robux!!! Enter your password to claim!!!",
+	  "is_scam": true,
+	  "wave": 1
+	},
+	{
+	  "sender": "mom@gmail.com",
+	  "subject": "Dinner Tonight",
+	  "body": "Hi Alex,\nWe are having pasta for dinner tonight. Be home by 7.\nLove,\nMom",
+	  "is_scam": false,
+	  "wave": 1
+	},
+	{
+	  "sender": "support@amaz0n-prize.com",
+	  "subject": "Urgent: Your account is blocked!",
+	  "body": "Your account is blocked! Send your password immediately to unlock it!!!",
+	  "is_scam": true,
+	  "wave": 1
+	},
+	{
+	  "sender": "library@citylibrary.com",
+	  "subject": "Book Return Reminder",
+	  "body": "Hi Alex,\nThis is a friendly reminder to return your borrowed book by Friday.\nThank you!",
+	  "is_scam": false,
+	  "wave": 1
+	},
+
+	{
+	  "sender": "principal@school.com",
+	  "subject": "School Trip Permission Slip",
+	  "body": "Dear Alex,\nPlease bring your signed permission slip for the school trip by Thursday.\nThank you.",
+	  "is_scam": false,
+	  "wave": 2
+	},
+	{
+	  "sender": "security@paypa1-alert.com",
+	  "subject": "Suspicious Login Attempt",
+	  "body": "We detected a suspicious login! Confirm your password now or your account will be deleted.",
+	  "is_scam": true,
+	  "wave": 2
+	},
+	{
+	  "sender": "friend@gamechat.com",
+	  "subject": "Play After School?",
+	  "body": "Hey Alex!\nWant to play after school today?\nLet me know!",
+	  "is_scam": false,
+	  "wave": 2
+	},
+	{
+	  "sender": "winner@lottery-fast.win",
+	  "subject": "Congratulations Winner!",
+	  "body": "You won $1,000,000! Send your bank details to receive the prize!",
+	  "is_scam": true,
+	  "wave": 2
+	},
+	{
+	  "sender": "coach@sportsclub.com",
+	  "subject": "Practice Reminder",
+	  "body": "Hi Alex,\nPractice starts at 5 PM today. Bring your water bottle.\nCoach Mike",
+	  "is_scam": false,
+	  "wave": 2
+	},
+	{
+	  "sender": "it-support@school.com",
+	  "subject": "Password Reset Notice",
+	  "body": "Hi Alex,\nYour school password will expire soon. Please reset it using the official school portal.",
+	  "is_scam": false,
+	  "wave": 3
+	},
+	{
+	  "sender": "netfl1x-support@secure-login.co",
+	  "subject": "Account Suspension",
+	  "body": "Your Netflix account is suspended! Enter your credit card info to reactivate.",
+	  "is_scam": true,
+	  "wave": 3
+	},
+	{
+	  "sender": "dad@gmail.com",
+	  "subject": "Movie Night",
+	  "body": "Hi Alex,\nWe are watching a movie tonight at 8 PM.\nLove,\nDad",
+	  "is_scam": false,
+	  "wave": 3
+	},
+	{
+	  "sender": "update@micr0soft-help.com",
+	  "subject": "Critical Security Update",
+	  "body": "Download this file immediately to fix your computer or it will crash!",
+	  "is_scam": true,
+	  "wave": 3
+	},
+	{
+	  "sender": "science@school.com",
+	  "subject": "Science Project Reminder",
+	  "body": "Hi Alex,\nDon't forget your science project presentation tomorrow.\nBest,\nMr. Green",
+	  "is_scam": false,
+	  "wave": 3
+	},
+
+	{
+	  "sender": "bank@safe-bank.com",
+	  "subject": "Monthly Statement Ready",
+	  "body": "Your monthly statement is ready. Please log in through the official website to view it.",
+	  "is_scam": false,
+	  "wave": 4
+	},
+	{
+	  "sender": "bank-security@safe-bannk.com",
+	  "subject": "URGENT ACCOUNT ISSUE",
+	  "body": "We detected fraud! Click this link and enter your PIN immediately!",
+	  "is_scam": true,
+	  "wave": 4
+	},
+	{
+	  "sender": "teacher@school.com",
+	  "subject": "Extra Help Session",
+	  "body": "Hi Alex,\nThere will be an extra math help session on Friday after school.",
+	  "is_scam": false,
+	  "wave": 4
+	},
+	{
+	  "sender": "youtube-premium@freegift.io",
+	  "subject": "Free Premium Membership",
+	  "body": "Claim your free YouTube Premium now! Enter your login to activate.",
+	  "is_scam": true,
+	  "wave": 4
+	},
+	{
+	  "sender": "artclub@school.com",
+	  "subject": "Art Club Meeting",
+	  "body": "Hi Alex,\nArt club meets Wednesday at 4 PM.\nSee you there!",
+	  "is_scam": false,
+	  "wave": 4
+	},
+
+	{
+	  "sender": "support@steamgames.com",
+	  "subject": "New Login from Unknown Device",
+	  "body": "We noticed a login from a new device. If this was you, no action is needed.",
+	  "is_scam": false,
+	  "wave": 5
+	},
+	{
+	  "sender": "steam-support@steaam-secure.com",
+	  "subject": "Verify Your Account Now",
+	  "body": "Your account will be permanently deleted unless you confirm your password here.",
+	  "is_scam": true,
+	  "wave": 5
+	},
+	{
+	  "sender": "grandma@gmail.com",
+	  "subject": "Birthday Invitation",
+	  "body": "Hi Alex,\nYou're invited to my birthday this Saturday!\nLove,\nGrandma",
+	  "is_scam": false,
+	  "wave": 5
+	},
+	{
+	  "sender": "prize@fast-cash.win",
+	  "subject": "You Won a New Phone!",
+	  "body": "You are selected! Send your address and credit card number to receive your prize.",
+	  "is_scam": true,
+	  "wave": 5
+	},
+	{
+	  "sender": "music@school.com",
+	  "subject": "Choir Practice Update",
+	  "body": "Choir practice is moved to Thursday this week.",
+	  "is_scam": false,
+	  "wave": 5
+	},
+
+	{
+	  "sender": "accounts@paypal.com",
+	  "subject": "Payment Received",
+	  "body": "You received a payment of $15. If this wasn't you, log in to your official PayPal account to review.",
+	  "is_scam": false,
+	  "wave": 6
+	},
+	{
+	  "sender": "accounts@paypaI-security.com",
+	  "subject": "Important: Verify Payment",
+	  "body": "A payment is pending. Confirm your identity by entering your password and card details here.",
+	  "is_scam": true,
+	  "wave": 6
+	},
+	{
+	  "sender": "school@newsletter.com",
+	  "subject": "Monthly Newsletter",
+	  "body": "Check out the latest updates and events happening at school this month.",
+	  "is_scam": false,
+	  "wave": 6
+	},
+	{
+	  "sender": "delivery@fast-shipping.net",
+	  "subject": "Package Delivery Failed",
+	  "body": "Your package could not be delivered. Pay a small fee here to reschedule delivery.",
+	  "is_scam": true,
+	  "wave": 6
+	},
+	{
+	  "sender": "hr@novatech.com",
+	  "subject": "Internship Opportunity",
+	  "body": "Hi Alex,\nWe are happy to invite you to apply for our summer internship program.\nBest regards,\nHR Team",
+	  "is_scam": false,
+	  "wave": 6
+	},
+	{
 	  "sender": "hr@novatech.com",
 	  "subject": "Annual Leave Policy Update",
 	  "body": "Hi Alex,\nPlease review the updated annual leave policy attached for 2026. Let me know if you have any questions.\nBest,\nSarah Ling, HR Department",
-	  "is_scam": false
+	  "is_scam": false,
+	  "wave": 7
 	},
 	{
 	  "sender": "finance@novatech.com",
 	  "subject": "Salary adjustment confirmation",
 	  "body": "Dear Alex,\nYour performance review resulted in a salary increment. Please confirm your details through the secure HR portal.\nThank you,\nFinance Team",
-	  "is_scam": false
+	  "is_scam": false,
+	  "wave": 7
 	},
 	{
 	  "sender": "payroll@novatech-support.com",
 	  "subject": "Action required: Salary delay",
 	  "body": "Hi Alex,\nWe are unable to process your payment this month. Please fill your bank credentials in the attached form to confirm your identity.\nPayroll Services",
-	  "is_scam": true
+	  "is_scam": true,
+	  "wave": 7
 	},
-	{
-	  "sender": "amazon-security@amazon-check.com",
-	  "subject": "Suspicious login detected",
-	  "body": "Dear Customer,\nWe noticed a login attempt from a new device. To secure your account, please verify your credentials by clicking the link below.\nAmazon Security Team",
-	  "is_scam": true
+		{
+	  "sender": "You got all mails",
+	  "subject": "You got all mails",
+	  "body": "You can now play only the VirusDefens game Good Luck",
+	  "is_scam": true,
+	  "wave": 8
 	},
-	{
-	  "sender": "no-reply@amazon.com",
-	  "subject": "Your order has been shipped",
-	  "body": "Hello Alex,\nYour order #239081 is on its way. You can track the shipment in your Amazon account.\nThanks for shopping with us!",
-	  "is_scam": false
-	},
-	{
-	  "sender": "info@mkbank.com",
-	  "subject": "Unusual activity on your card",
-	  "body": "Dear Mr. Alex Petrov,\nWe’ve detected an unauthorized attempt to withdraw 400 EUR. Please log in via our secure portal to confirm the transaction.\nMacedonian Bank Security",
-	  "is_scam": false
-	},
-	{
-	  "sender": "security@mkbank-verify.com",
-	  "subject": "Urgent: Account locked",
-	  "body": "Dear Customer,\nYour bank account is suspended. Click here immediately to restore access or your funds will be frozen within 24 hours.",
-	  "is_scam": true
-	},
-	{
-	  "sender": "it-support@novatech.com",
-	  "subject": "Password reset notification",
-	  "body": "Hi Alex,\nYour password was successfully changed on January 15. If this wasn’t you, please contact IT immediately.\nIT Department",
-	  "is_scam": false
-	},
-	{
-	  "sender": "helpdesk@outlook-mailservices.com",
-	  "subject": "Email storage full – verify now!",
-	  "body": "Your mailbox has exceeded its 90% quota. Verify your account to prevent suspension using the link below.",
-	  "is_scam": true
-	},
-	{
-	  "sender": "team@paypal.com",
-	  "subject": "Changes to our Terms and Conditions",
-	  "body": "Dear Alex,\nWe’ve updated our Terms of Service effective February 2026. Please take a moment to review them on our official site.\nThank you,\nPayPal",
-	  "is_scam": false
-	},
-	{
-	  "sender": "hr@novatech.com",
-	  "subject": "Updated remote work guidelines",
-	  "body": "Hi Alex,\nWe’ve updated our remote work guidelines for 2026. Please review them on the internal HR portal.\nBest,\nSarah Ling\nHR Department",
-	  "is_scam": false
-	},
-	{
-	  "sender": "hr@novatech-careers.com",
-	  "subject": "Immediate review of contract required",
-	  "body": "Hello Alex,\nWe are updating your employment contract. Download the attached file and log in with your company email and password to confirm your details.\nHR NovaTech Careers",
-	  "is_scam": true
-	},
-	{
-	  "sender": "support@mkbank.com",
-	  "subject": "Monthly statement available",
-	  "body": "Dear Alex Petrov,\nYour monthly account statement is now available in your online banking portal. Please log in through our official website to review it.\nMacedonian Bank",
-	  "is_scam": false
-	},
-	{
-	  "sender": "support@mkbannk.com",
-	  "subject": "Security upgrade – confirm now",
-	  "body": "Dear Customer,\nWe are performing a security upgrade. To avoid limitations on your card, confirm your full card number, expiry date and CVV using the link below.\nSecurity Team",
-	  "is_scam": true
-	},
-	{
-	  "sender": "no-reply@amazon.com",
-	  "subject": "Action needed: payment method expired",
-	  "body": "Hello Alex,\nYour default payment method could not be charged for your latest order. Please update your card details in your Amazon account settings.\nAmazon",
-	  "is_scam": false
-	},
-	{
-	  "sender": "no-reply@amazon-billing.com",
-	  "subject": "Account locked – verify billing info",
-	  "body": "Dear Customer,\nWe have locked your Amazon account due to a billing mismatch. Click the verification link and enter your full card and password within 24 hours to avoid permanent closure.\nAmazon Billing",
-	  "is_scam": true
-	},
-	{
-	  "sender": "service@paypal.com",
-	  "subject": "New login from Chrome on Windows",
-	  "body": "Hi Alex,\nWe noticed a login from a new device: Chrome on Windows in Skopje. If this was you, no action is needed. If not, change your password from your PayPal settings.\nPayPal Security",
-	  "is_scam": false
-	},
-	{
-	  "sender": "service@paypa1-security.com",
-	  "subject": "Unauthorized transfer – cancel now",
-	  "body": "Dear User,\nAn unauthorized transfer of 479.35 EUR is pending. To cancel this transaction and secure your account, click the link below and confirm your password and card details.\nPayPal Support",
-	  "is_scam": true
-	},
-	{
-	  "sender": "it-support@novatech.com",
-	  "subject": "VPN outage scheduled",
-	  "body": "Hi Alex,\nWe will perform maintenance on the VPN servers this Saturday from 02:00–04:00. Remote access may be unavailable during this period.\nIT Department",
-	  "is_scam": false
-	},
-	{
-	  "sender": "it-support@novatech-security.net",
-	  "subject": "Mandatory password reset",
-	  "body": "Attention employee,\nDue to a critical security incident, all staff must reset their passwords immediately. Use the link below and enter your current password and new password to keep access.\nIT Security Team",
-	  "is_scam": true
-	}
+
   ]
 }

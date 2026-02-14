@@ -14,8 +14,8 @@ var current_mail_index := -1
 var answered_mails := {}
 
 
+var allmails = []
 var mails = []
-
 func load_mails_from_json():
 	var file = FileAccess.open("res://data/emails.json", FileAccess.READ)
 	if file == null:
@@ -25,36 +25,46 @@ func load_mails_from_json():
 	var json_text = file.get_as_text()
 	file.close()
 
-	# In Godot 4.x JSON.parse_string returns a Dictionary directly
 	var json_data = JSON.parse_string(json_text)
 	if json_data == null:
 		push_error("Failed to parse emails.json")
 		return
-	mails = json_data["mails"]
+	allmails = json_data["mails"]
+	mails.clear()
+	for mail in allmails:
+		if mail["wave"] == GameManager.get_wave()+1 and GameManager.get_wave()<=7:
+			mails.append(mail)
+
 
 
 func _ready():
 	load_mails_from_json()
 	populate_mail_list()
 	show_mail(0)
-
+	
 func populate_mail_list():
-	for i in range(mails.size()):
-		var button = Button.new()
-		button.text = mails[i]["subject"]
-		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		button.clip_text=true
-		button.autowrap_mode=TextServer.AUTOWRAP_WORD
-		button.pressed.connect(func(): show_mail(i))
-		mail_list.add_child(button)
+	if GameManager.answaredmails<5:
+		for i in range(mails.size()):
+			var button = Button.new()
+			button.text = mails[i]["subject"]
+			button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+			button.clip_text=true
+			button.autowrap_mode=TextServer.AUTOWRAP_WORD
+			button.pressed.connect(func(): show_mail(i))
+			mail_list.add_child(button)
 
 
 func show_mail(index: int):
-	current_mail_index = index
-	var mail = mails[index]
-	sender_label.text = "From: " + mail["sender"]
-	subject_label.text = "Subject: " + mail["subject"]
-	body_text.text = mail["body"]
+	if mails.size() == 0 or GameManager.answaredmails>=5:
+		sender_label.text = "From: info@dev.com"
+		subject_label.text = "Subject: There is no more mail"
+		body_text.text = "Try next wave"
+	else:
+		current_mail_index = index
+		var mail = mails[index]
+		sender_label.text = "From: " + mail["sender"]
+		subject_label.text = "Subject: " + mail["subject"]
+		body_text.text = mail["body"]
 
 
 func _on_scam_button_pressed() -> void:
@@ -75,6 +85,7 @@ func make_decision(player_thinks_scam: bool):
 	answered_mails[current_mail_index] = correct
 	show_feedback(correct)
 	lock_current_mail()
+	GameManager.answaredmails+=1
 	if is_game_finished():
 		end_game()
 
@@ -88,6 +99,7 @@ func show_feedback(correct: bool):
 	if correct:
 		theme.set_color("font_disabled_color", "Button", Color("#5bd170"))
 		body_text.append_text("\n\n[color=green]✔ Correct decision[/color]")
+		GameManager.add_money(50)
 	else:
 		theme.set_color("font_disabled_color", "Button", Color("#ff0000ff"))
 		body_text.append_text("\n\n[color=red]✘ Wrong decision[/color]")
@@ -118,6 +130,7 @@ func show_end_screen(correct_count: int):
 	elif correct_count >= mails.size() / 2:
 		result_label.text = "Not bad, but some scams slipped through."
 	else:
+		GameManager.answaredmails=0
 		result_label.text = "Your inbox is compromised."
 
 

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckawmnbv0dm6o"]
+
+[ext_resource type="Script" uid="uid://ku8jc2jrt5a2" path="res://AntiVirus.gd" id="1_wrgf6"]
+[ext_resource type="Texture2D" uid="uid://btjo6crok3f7h" path="res://icons/antivirus.png" id="2_vr4r4"]
+
+[node name="AntiVirus" type="Node2D"]
+script = ExtResource("1_wrgf6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_vr4r4")

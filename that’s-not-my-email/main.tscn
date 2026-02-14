@@ -1,11 +1,21 @@
-[gd_scene load_steps=7 format=3 uid="uid://wpjnxhejqexk"]
+[gd_scene load_steps=10 format=3 uid="uid://wpjnxhejqexk"]
 
 [ext_resource type="Texture2D" uid="uid://btxtefutnw7e0" path="res://icons/mailbox.png" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://dm1lj17lbkyrq" path="res://Main.gd" id="1_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://bif1ttgl1y1nm" path="res://icons/wallpaper.png" id="2_7mycd"]
 [ext_resource type="Texture2D" uid="uid://cammoxdrhm1ms" path="res://icons/notepad.png" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://jv34njh4uuhs" path="res://icons/windows.png" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://cgh475d0upd05" path="res://icons/VirusDefense.png" id="4_272bh"]
 [ext_resource type="StyleBox" uid="uid://n7xrkfe0lbxa" path="res://startbuttonlook.tres" id="5_272bh"]
+[ext_resource type="Texture2D" uid="uid://bw6akspetj5r8" path="res://icons/quit.png" id="8_5vw27"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kek77"]
+bg_color = Color(0.7529412, 0.7529412, 0.7529412, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -53,13 +63,71 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="DesktopIcons2" type="HBoxContainer" parent="Desktop"]
+custom_minimum_size = Vector2(24.86, 0)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -172.785
+offset_right = 620.0
+offset_bottom = -47.785034
+grow_vertical = 0
+theme_override_constants/separation = 4
+
+[node name="NotepadIcon" type="Button" parent="Desktop/DesktopIcons2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Your info"
+icon = ExtResource("2_h2yge")
+flat = true
+autowrap_mode = 1
+autowrap_trim_flags = 0
+clip_text = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="NotepadIcon2" type="Button" parent="Desktop/DesktopIcons2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Job informations"
+icon = ExtResource("2_h2yge")
+flat = true
+autowrap_mode = 2
+autowrap_trim_flags = 0
+clip_text = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="NotepadIcon3" type="Button" parent="Desktop/DesktopIcons2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Banks"
+icon = ExtResource("2_h2yge")
+flat = true
+autowrap_mode = 1
+autowrap_trim_flags = 0
+clip_text = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="NotepadIcon4" type="Button" parent="Desktop/DesktopIcons2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "How to play"
+icon = ExtResource("2_h2yge")
+flat = true
+autowrap_mode = 1
+autowrap_trim_flags = 0
+clip_text = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
 [node name="DesktopIcons" type="VBoxContainer" parent="Desktop"]
 custom_minimum_size = Vector2(120, 0)
 layout_mode = 0
-offset_left = 20.0
-offset_top = 20.0
-offset_right = 140.0
-offset_bottom = 228.0
+offset_right = 120.0
+offset_bottom = 655.0
 
 [node name="MailIcon" type="Button" parent="Desktop/DesktopIcons"]
 layout_mode = 2
@@ -72,43 +140,10 @@ clip_text = true
 icon_alignment = 1
 vertical_icon_alignment = 0
 
-[node name="NotepadIcon" type="Button" parent="Desktop/DesktopIcons"]
+[node name="VirusDefense" type="Button" parent="Desktop/DesktopIcons"]
 layout_mode = 2
-text = "Your info"
-icon = ExtResource("2_h2yge")
-flat = true
-autowrap_mode = 1
-autowrap_trim_flags = 0
-clip_text = true
-icon_alignment = 1
-vertical_icon_alignment = 0
-
-[node name="NotepadIcon2" type="Button" parent="Desktop/DesktopIcons"]
-layout_mode = 2
-text = "Job informations"
-icon = ExtResource("2_h2yge")
-flat = true
-autowrap_mode = 2
-autowrap_trim_flags = 0
-clip_text = true
-icon_alignment = 1
-vertical_icon_alignment = 0
-
-[node name="NotepadIcon3" type="Button" parent="Desktop/DesktopIcons"]
-layout_mode = 2
-text = "Banks"
-icon = ExtResource("2_h2yge")
-flat = true
-autowrap_mode = 1
-autowrap_trim_flags = 0
-clip_text = true
-icon_alignment = 1
-vertical_icon_alignment = 0
-
-[node name="NotepadIcon4" type="Button" parent="Desktop/DesktopIcons"]
-layout_mode = 2
-text = "How to play"
-icon = ExtResource("2_h2yge")
+text = "VirusDefense"
+icon = ExtResource("4_272bh")
 flat = true
 autowrap_mode = 1
 autowrap_trim_flags = 0
@@ -155,19 +190,52 @@ text = "Start"
 icon = ExtResource("4_1bvp3")
 
 [node name="MailButton" type="Button" parent="Desktop/Taskbar/HBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = ExtResource("5_272bh")
 text = "Mail"
 
 [node name="NotepadButton" type="Button" parent="Desktop/Taskbar/HBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = ExtResource("5_272bh")
 text = "Notepad"
 
+[node name="StartMenuPanel" type="Panel" parent="Desktop"]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -113.0
+offset_right = 194.0
+offset_bottom = -46.0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_kek77")
+
+[node name="MarginContainer" type="MarginContainer" parent="Desktop/StartMenuPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+
+[node name="QuitButton" type="Button" parent="Desktop/StartMenuPanel/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Quit Game"
+icon = ExtResource("8_5vw27")
+flat = true
+
+[connection signal="pressed" from="Desktop/DesktopIcons2/NotepadIcon" to="." method="_on_notepad_icon_pressed"]
+[connection signal="pressed" from="Desktop/DesktopIcons2/NotepadIcon2" to="." method="_on_notepad_icon_2_pressed"]
+[connection signal="pressed" from="Desktop/DesktopIcons2/NotepadIcon3" to="." method="_on_notepad_icon_3_pressed"]
+[connection signal="pressed" from="Desktop/DesktopIcons2/NotepadIcon4" to="." method="_on_notepad_icon_4_pressed"]
 [connection signal="pressed" from="Desktop/DesktopIcons/MailIcon" to="." method="_on_mail_icon_pressed"]
-[connection signal="pressed" from="Desktop/DesktopIcons/NotepadIcon" to="." method="_on_notepad_icon_pressed"]
-[connection signal="pressed" from="Desktop/DesktopIcons/NotepadIcon2" to="." method="_on_notepad_icon_2_pressed"]
-[connection signal="pressed" from="Desktop/DesktopIcons/NotepadIcon3" to="." method="_on_notepad_icon_3_pressed"]
-[connection signal="pressed" from="Desktop/DesktopIcons/NotepadIcon4" to="." method="_on_notepad_icon_4_pressed"]
+[connection signal="pressed" from="Desktop/DesktopIcons/VirusDefense" to="." method="_on_virus_defense_pressed"]
+[connection signal="pressed" from="Desktop/Taskbar/HBoxContainer/Startbutton" to="." method="_on_startbutton_pressed"]
+[connection signal="pressed" from="Desktop/StartMenuPanel/MarginContainer/QuitButton" to="." method="_on_quit_button_pressed"]

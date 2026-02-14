@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://cn7yx32np8ibo"]
+
+[ext_resource type="Script" uid="uid://cfrkg1e36730y" path="res://Cell.gd" id="1_hvfjw"]
+
+[sub_resource type="Gradient" id="Gradient_4vuou"]
+colors = PackedColorArray(0.7594587, 1.6101309, 0.7094638, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_grw4w"]
+gradient = SubResource("Gradient_4vuou")
+fill_from = Vector2(0, 1)
+
+[node name="CellButton" type="Button"]
+icon = SubResource("GradientTexture2D_grw4w")
+script = ExtResource("1_hvfjw")
