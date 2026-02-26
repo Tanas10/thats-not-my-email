@@ -1,6 +1,6 @@
 extends Node
 
-var money = 0
+var money = 50
 var enemys_amout = 0
 var waves = 0
 var isWaveActive = false

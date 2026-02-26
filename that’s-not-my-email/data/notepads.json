@@ -7,10 +7,31 @@
 	  "text": "Company Information:\nEmployer: NovaTech Solutions\nPosition: Software Engineer\nEmail: alex.petrov@novatech.com\nMain contacts: HR (Sarah Ling), Finance, and IT.\nOfficial company domains: novatech.com, novatech.mk.\nHR, Finance and IT emails always come from @novatech.com, not from similar domains like novatech-support.com."
 	},
 	{
-	  "text": "Bank and Payment Information:\nMain Bank: Macedonian Bank (mkbank.com)\nAccount uses online banking portal frequently.\nPayPal and Amazon accounts linked to main bank card.\nLegitimate bank emails always come from @mkbank.com, never from look-alike domains such as mkbank-verify.com."
+	  "text": "Phishing is a trick that people use on the internet to steal your passwords or personal information. It happens when someone pretends to be a bank, a school, a game, or a popular company and sends you a message that looks real. But even though it may look official, it’s actually fake. Think of it like someone wearing a costume online — they are hiding who they really are.
+
+These messages often try to make you feel scared or rushed. They might say things like “URGENT!” or “Your account will be closed today!” so you panic and click quickly without thinking. Sometimes they promise prizes, free money, or special rewards that sound too good to be true. That’s another big warning sign. Real companies usually do not ask for your password through email, and they don’t pressure you to act immediately.
+
+You should also look closely at the sender’s email address and any links in the message. Scammers often use addresses that look almost correct, but have small changes, like replacing a letter with a similar-looking one. If something feels strange, confusing, or too urgent, stop and think before clicking anything.
+
+The most important rule is simple: take your time and ask for help if you are unsure. Talk to a parent, teacher, or another trusted adult. It is always better to double-check and stay safe than to rush and get tricked online."
 	},
 {
-  "text": "How to Play: That's Not Your Email\n\nGame Overview\nYou're Alex Petrov, a software engineer from Ohrid. Your inbox has 20 emails from work, bank, and services. Some are real, some are scams.\n\nYour Mission\nOpen the Mail app → Check the 20 emails in the floating Gmail-style window → For each email press the button 'REAL' or 'SCAM'.\n\n Use Clues\nOpen Notepad app → Read your personal info, company details, bank accounts, and trusted email domains. Compare sender addresses carefully!\n\n Winning\nGet 16+ correct → You spot all scams and stay safe!\nGet 12-15 correct → Good job, but watch for look-alike domains next time.\nLess than 12 → Scammers got you—review the notes and try again!\n\n\n Pro Tips\n- Check sender domain (novatech.com vs novatech-support.com)\n- Real companies never ask for bank info via email\n\nGood luck, Alex!"
+  "text": "How to Play: That's Not Your Email\n\nHow to Play
+
+    Viruses move along a predefined path.
+    Place towers on buildable cells to defend the system.
+    Each tower costs in-game currency.
+    Towers automatically attack viruses within their range.
+    Each new wave increases the number and difficulty of viruses.
+    After completing a wave, a set of emails appears.
+    The player must decide whether each email is a scam or legitimate.
+
+Objective
+
+    Survive as many waves as possible.
+    Learn how to recognize phishing emails.
+    Develop basic cybersecurity awareness skills.
+"
 }
   ]
 }

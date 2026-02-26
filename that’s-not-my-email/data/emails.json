@@ -242,6 +242,181 @@
 	  "is_scam": true,
 	  "wave": 8
 	},
+	{
+  "sender": "it-support@company-secure.com",
+  "subject": "Urgent: Password Expiration Notice",
+  "body": "Your password expires today.\nClick here to keep your account active immediately:\nhttp://company-security-reset.com\nFailure to act will suspend your account.",
+  "is_scam": true,
+  "wave": 1
+},
+{
+  "sender": "netflix@accounts.com",
+  "subject": "Subscription Renewal Failed",
+  "body": "We couldn't process your last payment.\nPlease update your billing information here:\nhttp://netflix-billing-update.com",
+  "is_scam": true,
+  "wave": 1
+},
+{
+  "sender": "friend.john@gmail.com",
+  "subject": "Photos from the trip!",
+  "body": "Hey!\nI finally uploaded the photos from our weekend trip.\nCheck the attachment when you have time 🙂",
+  "is_scam": false,
+  "wave": 1
+},
+{
+  "sender": "bank.alert@secure-bank-login.com",
+  "subject": "Suspicious Login Attempt",
+  "body": "We detected a suspicious login attempt.\nVerify your identity immediately:\nhttp://secure-bank-login-alert.com\nYour account will be locked in 24 hours.",
+  "is_scam": true,
+  "wave": 2
+},
+{
+  "sender": "hr@company.com",
+  "subject": "Updated Vacation Policy",
+  "body": "Hello,\nPlease review the attached document regarding the updated vacation policy for this year.\nLet us know if you have questions.",
+  "is_scam": false,
+  "wave": 1
+},
+{
+  "sender": "amazon-support@amaz0n-orders.com",
+  "subject": "Order Confirmation #48291",
+  "body": "Thank you for your purchase.\nIf you did not place this order, confirm your details here:\nhttp://amaz0n-order-check.com",
+  "is_scam": true,
+  "wave": 2
+},
+{
+  "sender": "university@college.edu",
+  "subject": "Exam Schedule Available",
+  "body": "Dear Student,\nThe final exam schedule has been posted on the student portal.\nPlease log in through the official website to check your dates.",
+  "is_scam": false,
+  "wave": 1
+},
+{
+  "sender": "crypto-invest@fastprofit.biz",
+  "subject": "Double Your Bitcoin in 24 Hours!",
+  "body": "Limited time offer!\nSend 0.5 BTC and receive 1 BTC back instantly.\nGuaranteed profit. Act now!",
+  "is_scam": true,
+  "wave": 3
+},
+{
+  "sender": "delivery@dhl.com",
+  "subject": "Package Out for Delivery",
+  "body": "Your package is scheduled for delivery tomorrow.\nTrack your shipment using the official DHL tracking number provided in your account.",
+  "is_scam": false,
+  "wave": 2
+},
+{
+  "sender": "support@paypaI-verification.com",
+  "subject": "Account Limited",
+  "body": "Your PayPal account has been limited due to unusual activity.\nRestore access immediately:\nhttp://paypal-verification-secure.com",
+  "is_scam": true,
+  "wave": 3
+},
+{
+  "sender": "support@apple-idverify.com",
+  "subject": "Apple ID Locked",
+  "body": "Your Apple ID has been locked for security reasons.\nVerify your account within 12 hours:\nhttp://apple-idverify.com/unlock",
+  "is_scam": true,
+  "wave": 1
+},
+{
+  "sender": "principal@school.edu",
+  "subject": "Parent Meeting Reminder",
+  "body": "Dear Alex,\nThis is a reminder about tomorrow's parent-teacher meeting at 10 AM.\nPlease arrive 10 minutes early.",
+  "is_scam": false,
+  "wave": 1
+},
+{
+  "sender": "security@micr0soft-support.com",
+  "subject": "Unusual Sign-in Activity",
+  "body": "We detected an unusual sign-in attempt from Russia.\nIf this wasn't you, secure your account now:\nhttp://micr0soft-support.com/secure",
+  "is_scam": true,
+  "wave": 2
+},
+{
+  "sender": "steam@steampowered.com",
+  "subject": "Your Receipt from Steam",
+  "body": "Thank you for your recent purchase.\nYou can view your receipt in your Steam account purchase history.",
+  "is_scam": false,
+  "wave": 2
+},
+{
+  "sender": "accounts@spotify-support.co",
+  "subject": "Payment Method Declined",
+  "body": "We couldn't process your subscription payment.\nPlease update your billing info here:\nhttp://spotify-support.co/update",
+  "is_scam": true,
+  "wave": 3
+},
+{
+  "sender": "library@citylibrary.org",
+  "subject": "Book Return Reminder",
+  "body": "Hello,\nThis is a friendly reminder that your borrowed book is due in 3 days.\nThank you for using our library services.",
+  "is_scam": false,
+  "wave": 3
+},
+{
+  "sender": "hr-department@company-benefits.com",
+  "subject": "Action Required: Benefits Update",
+  "body": "Employees must reconfirm benefits enrollment before Friday.\nAccess the HR portal below to avoid losing coverage:\nhttp://company-benefits-verify.com",
+  "is_scam": true,
+  "wave": 4
+},
+{
+  "sender": "no-reply@zoom.us",
+  "subject": "Meeting Invitation",
+  "body": "You have been invited to a Zoom meeting scheduled for Thursday at 2 PM.\nJoin using the official Zoom app or website.",
+  "is_scam": false,
+  "wave": 4
+},
+{
+  "sender": "billing@netflix-support.com",
+  "subject": "Important: Account On Hold",
+  "body": "Your account is temporarily on hold.\nTo continue watching, confirm your details here:\nhttps://netflix-account-help.com",
+  "is_scam": true,
+  "wave": 5
+},
+{
+  "sender": "team@slack.com",
+  "subject": "New Login from Chrome on Windows",
+  "body": "We noticed a new login to your Slack workspace from Chrome on Windows.\nIf this was you, no further action is required.",
+  "is_scam": false,
+  "wave": 5
+},
+{
+  "sender": "finance@company.com",
+  "subject": "Updated Invoice Attached",
+  "body": "Hi,\nPlease see the attached invoice for last month's services.\nLet me know if everything looks correct.",
+  "is_scam": false,
+  "wave": 6
+},
+{
+  "sender": "finance-dept@company-payables.com",
+  "subject": "Re: Updated Invoice Attached",
+  "body": "Hi,\nWe noticed an issue with the previous invoice.\nPlease review the corrected version here:\nhttp://company-payables-secure.com/invoice",
+  "is_scam": true,
+  "wave": 6
+},
+{
+  "sender": "admin@company.com",
+  "subject": "Quick Request",
+  "body": "Are you available right now?\nI need you to purchase 5 gift cards for a client.\nSend me the codes as soon as possible.\n- CEO",
+  "is_scam": true,
+  "wave": 6
+},
+{
+  "sender": "it@company.com",
+  "subject": "VPN Maintenance Tonight",
+  "body": "Reminder: The company VPN will be under maintenance tonight from 11 PM to 1 AM.\nExpect brief connectivity interruptions.",
+  "is_scam": false,
+  "wave": 6
+},
+{
+  "sender": "support@company.com",
+  "subject": "Shared Document: Q4 Budget Review",
+  "body": "A document titled 'Q4 Budget Review' has been shared with you.\nView it here:\nhttps://company-files.com/shared/q4-budget",
+  "is_scam": true,
+  "wave": 7
+}
 
   ]
 }

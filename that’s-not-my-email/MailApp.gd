@@ -16,6 +16,7 @@ var answered_mails := {}
 
 var allmails = []
 var mails = []
+var random_mails = []
 func load_mails_from_json():
 	var file = FileAccess.open("res://data/emails.json", FileAccess.READ)
 	if file == null:
@@ -43,10 +44,13 @@ func _ready():
 	show_mail(0)
 	
 func populate_mail_list():
+	random_mails = mails.duplicate() 
+	random_mails.shuffle()
+	random_mails = random_mails.slice(0, 5)
 	if GameManager.answaredmails<5:
-		for i in range(mails.size()):
+		for i in range(random_mails.size()):
 			var button = Button.new()
-			button.text = mails[i]["subject"]
+			button.text = random_mails[i]["subject"]
 			button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 			button.clip_text=true
 			button.autowrap_mode=TextServer.AUTOWRAP_WORD

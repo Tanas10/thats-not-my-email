@@ -76,6 +76,7 @@ grow_vertical = 0
 theme_override_constants/separation = 4
 
 [node name="NotepadIcon" type="Button" parent="Desktop/DesktopIcons2"]
+visible = false
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 text = "Your info"
@@ -88,6 +89,7 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 
 [node name="NotepadIcon2" type="Button" parent="Desktop/DesktopIcons2"]
+visible = false
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 text = "Job informations"
@@ -102,10 +104,10 @@ vertical_icon_alignment = 0
 [node name="NotepadIcon3" type="Button" parent="Desktop/DesktopIcons2"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
-text = "Banks"
+text = "What is Phishing"
 icon = ExtResource("2_h2yge")
 flat = true
-autowrap_mode = 1
+autowrap_mode = 2
 autowrap_trim_flags = 0
 clip_text = true
 icon_alignment = 1
