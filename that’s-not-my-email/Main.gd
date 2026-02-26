@@ -17,7 +17,8 @@ var app_window_scene = preload("res://AppWindow.tscn")
 var mail_app_scene = preload("res://MailApp.tscn")
 var notepad_app_scene = preload("res://NotepadApp.tscn")
 var virus_defense_scene =preload("res://VirusDefense.tscn")
- 
+
+
 const PopUpScene = preload("res://PopUpNotification.tscn")
 var wave = 0
 var isWaveActive = false

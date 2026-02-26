@@ -165,7 +165,7 @@ func load_saved_towers():
 			"Firewall":
 				tower_scene = preload("res://Firewall.tscn")
 			"AntiVirus":
-				tower_scene = preload("res://Antivirus.tscn")
+				tower_scene = preload("res://AntiVirus.tscn")
 
 		if tower_scene:
 			var tower = tower_scene.instantiate()
